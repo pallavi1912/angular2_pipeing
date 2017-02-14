@@ -9,7 +9,8 @@ import { OrdinalPipe } from 'app/ordinal.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrdinalPipe
   ],
   imports: [
     BrowserModule,

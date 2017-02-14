@@ -2,16 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<div>
+  template: `<div>
       <ul>
         <li *ngFor="let num of numbers">
           {{ num | ordinal }}
         </li>
       </ul>
-    </div>',
+    </div>`,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+ numbers:any;
  constructor(){
   this.numbers=[1,2,3,4,5,6,7,8,9,12,11113,123];
  }
